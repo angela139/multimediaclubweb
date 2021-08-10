@@ -1,0 +1,72 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+/*--- navigation bar ---*/
+.navbar {
+  background:transparent;
+}
+.nav-link {
+  color: black;
+  cursor: pointer;
+  font-family:"Courier New";
+  font-size: 20px;
+}
+.nav-link:hover {
+  color: #000;
+}
+.navbar-collapse {
+  justify-content: flex-end;
+  text-align:center;
+  margin-left: 40%;
+ }
+.navbar-brand img {
+  height: 80px;
+  width: auto;
+  position: fixed;
+  top:10px;
+  left:5px;
+}
+.polaroids img {
+  border: solid #fff;
+  border-width:6px 6px 50px 6px;
+  box-shadow:1px 1px 5px #333; 
+  height:auto; 
+  width:250px;
+  animation: fadeIn 8s;
+}
+.polaroids img:hover {
+  transition: transform .2s;
+  transform: scale(1.5);
+}
+.one img {
+  position: relative;
+  left:100px;
+  top:100px;
+  transform: rotate(25deg);
+}
+.two img {
+  position: relative;
+  left:400px;
+  top:100px;
+  transform: rotate(-10deg);
+}
+.three img {
+  position: relative;
+  left:800px;
+  bottom:200px;
+  transform: rotate(25deg);
+}
+.four img {
+  position: relative;
+  left:500px;
+  bottom:650px;
+  transform: rotate(-25deg);
+}
+.five img {
+  position: relative;
+  left:1100px;
+  bottom:800px;
+  transform: rotate(-25deg);
+}
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
